@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700;800;900&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+	integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <title>Lush</title>
+</head>
+<body>
+  
+   <header class="header" id="header">
+       <div class="container">
+         
+          <div class="header__line" id="header__line">
+           <div class="header__logo">
+               <img src="images/logo.png" alt="">
+           </div>
+           
+           <div class="nav">
+              <div class="nav__item-cart" tabindex="0">
+                 <div class="cart">
+                      <i class="fas fa-shopping-basket"></i>
+                  </div>
+                  <span class="header__zero">0</span>
+                  <div class="cart__content">
+                      <ul class="cart__content-list">
+                      </ul>
+                      <div class="cart__content-bottom">
+                          <div class="cart__content-fullprice">
+                              <div>Total: </div>
+                              <div class="fullprice">$24</div>
+                          </div>
+                          <button class="cart__content-btn" id="open-modal-btn">Order</button>
+                      </div>
+                    </div>
+               </div>
+               <a class="nav__item" href="#" data-scroll="#header">Home</a>
+               <a class="nav__item" href="#" data-scroll="#about">About Us</a>
+               <a class="nav__item" href="#" data-scroll="#planters">Planters</a>
+               <a class="nav__item" href="#" data-scroll="#contact">Contact</a>
+               <a class="nav__item" href="#" data-scroll="#blog">Blog</a>
+           </div>
+           
+           </div>
+           
+           <div class="header__inner">
+               <div class="header__title">Nature's Beauty Delivered to You</div>
+               <div class="header__subtitle">Nature's beauty is just a click away with our online flower and plant shop. We offer a wide variety of flowers that will bring a touch of nature to your home!</div>
+               
+          
+               <a href="#" class="btn">Book Now</a>
+               <a href="#" class="btn">Watch Video</a>
+           </div>
+       </div><!--/.container-->
+   </header><!--/.header-->
+   
+   <div class="modal" id="modal">
+       <div class="modal__bg">
+          <button class="modal__close" id="close-my-modal-btn">
+              <img class="modal__img" src="images/close.svg" alt="">
+          </button>
+           <div class="modal__content">
+               <div class="modal__content-title">Your order</div>
+               <div class="modal__content-order">
+                   <div class="order-quantity modal__content-order-item">products: <span>3</span></div>
+                   <div class="order-total modal__content-order-item">in total: <span>17$</span></div>
+                   <div class="modal__content-info">
+                       <button class="order-button modal__content-order-item">your order</button>
+                       <ul class="order__list">
+                           <li class="order__list-item">
+                               <article class="order__list-product">
+                                   <img src="images/plants/1.png" alt="" class="order__list-img">
+                                   <div class="order__list-text">
+                                       <div class="order__list-title">Cactus Plant</div>
+                                       <span class="order__list-price">8$</span>
+                                   </div>
+                                   <button class="order__list-delete">
+                                       <img src="images/trash.svg" alt="" class="order__list-trash">
+                                   </button>
+                               </article>
+                           </li>
+                           <li class="order__list-item">
+                               <article class="order__list-product">
+                                   <img src="images/plants/1.png" alt="" class="order__list-img">
+                                   <div class="order__list-text">
+                                       <div class="order__list-title">Cactus Plant</div>
+                                       <span class="order__list-price">8$</span>
+                                   </div>
+                                   <button class="order__list-delete">
+                                       <img src="images/trash.svg" alt="" class="order__list-trash">
+                                   </button>
+                               </article>
+                           </li>
+                           <li class="order__list-item">
+                               <article class="order__list-product">
+                                   <img src="images/plants/1.png" alt="" class="order__list-img">
+                                   <div class="order__list-text">
+                                       <div class="order__list-title">Cactus Plant</div>
+                                       <span class="order__list-price">8$</span>
+                                   </div>
+                                   <button class="order__list-delete">
+                                       <img src="images/trash.svg" alt="" class="order__list-trash">
+                                   </button>
+                               </article>
+                           </li>
+                       </ul>
+                   </div>
+                </div>
+               <form class="modal__content-data">
+                   <label for="" class="modal__order-label">
+                       <span class="order__text">Name</span>
+                       <input type="text" class="order__input">
+                   </label>
+                   <label for="" class="modal__order-label">
+                       <span class="order__text">Phone</span>
+                       <input type="tel" class="order__input">
+                   </label>
+                   <label for="" class="modal__order-label">
+                       <span class="order__text">Mail</span>
+                       <input type="email" class="order__input">
+                   </label>
+               </form>
+               <button class="order__btn">Order</button>
+           </div>
+       </div>
+   </div><!--/.modal-->
+   
+   <div class="cart">
+       
+   </div>
+   
+   <div class="about" id="about">
+       <div class="container">
+           <div class="about__line">
+              
+               <div class="title">We Help choose The most suitable plants for you</div>
+               
+               <div class="about__text">Our selection includes a wide variety of flowers, from classic roses to exotic orchids, as well as a variety of lush indoor and outdoor plants and also offer unique floral arrangements that are perfect for any occasion, whether you're looking to brighten up your home or send a thoughtful gift. </div>
+               
+           </div>
+           
+        <div class="about__inner">  
+           <div class="about__item">
+               
+               <img  class="about__icon" src="images/icon/1.png" alt="">
+               
+               <div class="about__item-title">Indoor Plants</div>
+               <div class="about__item-text">Bring the beauty of nature to your outdoor spaces with our wide selection of outdoor plants</div>
+           </div>
+           
+            <div class="about__item">
+               
+               <img  class="about__icon" src="images/icon/2.png" alt="">
+               
+               <div class="about__item-title">Outdoor Plants</div>
+               <div class="about__item-text">Bring a touch of greenery to your living spaces with our collection of indoor plants, perfect for purifying the air and adding a natural touch to your home.</div>
+           </div>
+           
+            <div class="about__item">
+               
+               <img  class="about__icon" src="images/icon/3.png" alt="">
+               
+               <div class="about__item-title">Plants Pots</div>
+               <div class="about__item-text">Add a touch of style to your indoor or outdoor spaces with our collection of pots plants, available in a variety of sizes and designs to fit any decor</div>
+           </div>
+           
+           </div> 
+       </div><!--/.container-->
+   </div><!--/.about-->
+   
+   <div class="plants" id="planters">
+       <div class="container">
+           <div class="plants__title">What We Offer To You</div>
+           
+           <div class="plants__items">
+           
+           <div class="plants__item-two">
+                   <div class="plants__item">
+                   <img class="plants__img" src="images/plants/0.png" alt="">
+
+                <div class="plants__inner">
+                   <div class="plants__name">Cactus Plant</div>
+
+                   <div class="plants__price">
+                   <div class="plants__price-one">($11)</div> 
+                   <div class="plants__price-two">8</div>
+                   </div>
+
+                   <button class="plants__btn" href="#">Add To Cart</button>
+              </div>
+            </div> 
+                <div class="plants__item">
+                   <img class="plants__img" src="images/plants/1.png" alt="">
+
+                <div class="plants__inner">
+                   <div class="plants__name">Cactus Plant</div>
+
+                   <div class="plants__price">
+                   <div class="plants__price-one">($10)</div> 
+                   <div class="plants__price-two">8</div>
+                   </div>
+
+                   <button class="plants__btn" href="#">Add To Cart</button>
+              </div>
+            </div> 
+           </div>
+           
+           <div class="plants__item-two">
+                   <div class="plants__item">
+                   <img class="plants__img" src="images/plants/2.png" alt="">
+
+                <div class="plants__inner">
+                   <div class="plants__name">Cactus Plant</div>
+
+                   <div class="plants__price">
+                   <div class="plants__price-one">($11)</div> 
+                   <div class="plants__price-two">8</div>
+                   </div>
+
+                   <button class="plants__btn" href="#">Add To Cart</button>
+              </div>
+            </div> 
+
+               <div class="plants__item">
+                   <img class="plants__img" src="images/plants/3.png" alt="">
+
+                <div class="plants__inner">
+                   <div class="plants__name">Cactus Plant</div>
+
+                   <div class="plants__price">
+                   <div class="plants__price-one">($11)</div> 
+                   <div class="plants__price-two">9</div>
+                   </div>
+
+                   <button class="plants__btn" href="#">Add To Cart</button>
+              </div>
+            </div>
+           </div>
+            
+           </div><!--/.plants__items-->
+           
+              <div class="plants__items">
+              
+              <div class="plants__item-two">
+                      <div class="plants__item">
+                   <img class="plants__img" src="images/plants/4.png" alt="">
+
+                <div class="plants__inner">
+                   <div class="plants__name">Cactus Plant</div>
+
+                   <div class="plants__price">
+                   <div class="plants__price-one">($15)</div> 
+                   <div class="plants__price-two">13</div>
+                   </div>
+
+                   <button class="plants__btn" href="#">Add To Cart</button>
+              </div>
+            </div> 
+                <div class="plants__item">
+                   <img class="plants__img" src="images/plants/5.png" alt="">
+
+                <div class="plants__inner">
+                   <div class="plants__name">Cactus Plant</div>
+
+                   <div class="plants__price">
+                   <div class="plants__price-one">($10)</div> 
+                   <div class="plants__price-two">8</div>
+                   </div>
+
+                   <button class="plants__btn" href="#">Add To Cart</button>
+              </div>
+            </div> 
+              </div>
+           
+           <div class="plants__item-two">
+                   <div class="plants__item">
+                   <img class="plants__img" src="images/plants/6.png" alt="">
+
+                <div class="plants__inner">
+                   <div class="plants__name">Cactus Plant</div>
+
+                   <div class="plants__price">
+                   <div class="plants__price-one">($11)</div> 
+                   <div class="plants__price-two">10</div>
+                   </div>
+
+                   <button class="plants__btn" href="#">Add To Cart</button>
+              </div>
+            </div> 
+
+               <div class="plants__item">
+                   <img class="plants__img" src="images/plants/7.png" alt="">
+
+                <div class="plants__inner">
+                   <div class="plants__name">Cactus Plant</div>
+
+                   <div class="plants__price">
+                   <div class="plants__price-one">($9)</div> 
+                   <div class="plants__price-two">6</div>
+                   </div>
+
+                   <button class="plants__btn" href="#">Add To Cart</button>
+              </div>
+        </div>
+           </div>
+            
+           </div><!--/.plants__items-->
+       </div><!--/.container-->
+   </div><!--/.plants-->
+   
+    <div class="benefit">
+        <div class="container">
+           
+           <div class="benefit__inner">
+              
+              <div class="benefit__left">
+               
+                   <div class="benefit__img_bg">
+                       <img src="images/benefit.svg" alt="#">
+                   </div>
+                   
+                   <div class="benefit__left_Items">
+                       <div class="benefit__left_item-1">
+                           <a class="add_1">
+                               <img src="images/add.svg" alt="">
+                           </a>
+                           <div class="benefit__left_img-1">
+                               <img src="images/beenfit_item/1.svg" alt="" class="left_img-1">
+                           </div>
+                       </div>
+                       
+                       <div class="benefit__left_item-2">
+                           <a class="add_2">
+                               <img src="images/add.svg" alt="">
+                           </a>
+                           <div class="benefit__left_img-2">
+                               <img src="images/beenfit_item/2.jpg" alt="" class="left_img-2">
+                           </div>
+                       </div>
+                       <div class="benefit__left_item-3">
+                           <a class="add_3">
+                               <img src="images/add.svg" alt="">
+                           </a>
+                           <div class="benefit__left_img-3">
+                               <img src="images/beenfit_item/3.jpg" alt="" class="left_img-3">
+                           </div>
+                       </div>
+                       <div class="benefit__left_item-4">
+                           <a class="add-4">
+                               <img src="images/add.svg" alt="">
+                           </a>
+                           <div class="benefit__left_img-4">
+                               <img src="images/beenfit_item/4.jpg" alt="" class="left_img-4">
+                           </div>
+                       </div>
+                   </div>
+               
+               </div><!--/.benefit__left-->
+               
+              <div class="benefit__content">
+                  
+                  <div class="benefit__items">
+                  
+                   <div class="benefit__item">
+                       <img class="benefit__img" src="images/benefit-icon/1.png" alt="">
+                       
+                    <div class="benefit__item-name">Always Fresh</div>
+                       
+                    <div class="benefit__item-text">Our flowers are always fresh, handpicked and delivered promptly for maximum longevity and enjoyment.</div>
+                  
+                       
+                   </div>
+                   
+                   <div class="benefit__item">
+                       <img src="images/benefit-icon/2.png" alt="">
+                       
+                    <div class="benefit__item-name">Quality Product</div>
+                       
+                    <div class="benefit__item-text">Our flowers are of the highest quality, carefully selected and sourced from reputable</div>
+                  
+                       
+                   </div>
+                   
+                   </div>
+                   
+                   <div class="benefit__items">
+                  
+                   <div class="benefit__item">
+                       <img class="benefit__img" src="images/benefit-icon/3.png" alt="">
+                       
+                    <div class="benefit__item-name">Work Smart</div>
+                       
+                    <div class="benefit__item-text">We work smart, using innovative techniques and technology to streamline our processes</div>
+                  
+                       
+                   </div>
+                   
+                   <div class="benefit__item">
+                       <img src="images/benefit-icon/4.png" alt="">
+                       
+                    <div class="benefit__item-name">Excelent Service</div>
+                       
+                    <div class="benefit__item-text">We pride ourselves on providing excellent service, going above and beyond to meet our customers' needs</div>
+                  
+                       
+                   </div>
+                   
+                   </div>
+                   
+                   
+             </div> 
+              
+               
+               
+           </div><!--/.benefit__inner-->
+            
+        </div><!--/.container-->
+    </div><!--/.benefit-->
+    
+    <div class="gallery">
+        <div class="container">
+           
+           <div class="plants__title">Our Gallery View</div>
+            
+            <div class="gallery__items">
+            
+            <div class="gallery__col">
+               
+                <div class="gallery__item">
+                    <img class="gallery__img" src="images/galery/1.jpg" alt="">
+                </div>
+                
+                
+            </div>
+            
+             <div class="gallery__col">
+               
+                <div class="gallery__item">
+                    <img class="gallery__img" src="images/galery/2.jpg" alt="">
+                </div>
+                
+                <div class="gallery__item">
+                    <img class="gallery__img" src="images/galery/3.jpg" alt="">
+                </div>
+                
+            </div>
+            
+              <div class="gallery__col">
+               
+                <div class="gallery__item">
+                    <img class="gallery__img" src="images/galery/4.jpg" alt="">
+                </div>
+                
+                <div class="gallery__item">
+                    <img class="gallery__img" src="images/galery/5.jpg" alt="">
+                </div>
+                
+            </div>
+            
+           </div>
+            
+        </div><!--/.container-->
+    </div><!--/.gallery-->
+    
+    <div class="testimonial">
+        <div class="container">
+            
+             <div class="plants__title">What do they say about us</div>
+             
+             <div class="testimonial__inner">
+                 <div class="testimonial__item">
+                    
+                    <div class="testimonial__avatar">
+                    
+                         <div class="testimonial__img">
+                             <img src="images/avatar/1.png" alt="">
+                         </div>
+
+                         <div class="testimonial__name">Jessica Watson</div>
+                     
+                     </div>
+                     
+                     <div class="testimonial__text">“ Highly recommend this website for quality flowers and plants. Great prices, timely delivery and excellent customer service. ”</div>
+                     
+                 </div>
+                 
+                  <div class="testimonial__item">
+                    
+                    <div class="testimonial__avatar">
+                    
+                         <div class="testimonial__img">
+                             <img src="images/avatar/2.png" alt="">
+                         </div>
+
+                         <div class="testimonial__name">Kate Szu</div>
+                     
+                     </div>
+                     
+                     <div class="testimonial__text">"Great service, beautiful flowers, timely delivery. Highly recommend."</div>
+                     
+                 </div>
+                 
+                  <div class="testimonial__item">
+                    
+                    <div class="testimonial__avatar">
+                    
+                         <div class="testimonial__img">
+                             <img src="images/avatar/3.png" alt="">
+                         </div>
+
+                         <div class="testimonial__name">Grace</div>
+                     
+                     </div>
+                     
+                     <div class="testimonial__text">"I am very happy with my purchase from this website, the plants were healthy and arrived on time.”</div>
+                     
+                 </div>
+             </div>
+            
+        </div><!--/.container-->
+    </div><!--/.testimonial-->
+    
+    <div class="cta" id="contact">
+        <div class="container">
+         
+        <div class="cta__inner"> 
+            <div class="cta__left">
+                Enter Your Email Address For Our Mailing Promo Or Other Interesting <br> Things
+            </div>
+            
+            <div class="cta__right">
+                <form class="subscribe" action="/" method="post">
+					<input class="subscribe__input" type="email" name="name" placeholder="Enter your email">
+					
+				</form>
+           
+           <button class="subscribe__btn" type="submit">Submit</button>
+            </div>
+        </div> 
+            
+        </div><!--/.container-->
+    </div><!--/.cta-->
+    
+    <div class="blog" id="blog">
+        <div class="container">
+            
+             <div class="plants__title">Interesting blog to read</div>
+             
+             <div class="blog__items">
+                 
+                 <div class="blog__item">
+                    
+                     <div class="blog__img">
+                         <img src="images/blog/1.png" alt="">
+                     </div>
+                     
+                     <div class="blog__title">More productive with an greenery</div>
+                     
+                     <div class="blog__text">
+                     <div class="blog__text-1">
+                         An atmosphere of greenery can increase productivity in the workplace. Studies show that plants improve air quality and decrease stress
+                     </div>
+                     <span class="dots">...</span>   
+                        <div class="blog__text-2">
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut eaque, dolorum non. Totam amet sapiente ullam aliquam exercitationem unde molestiae provident corrupti culpa, voluptates maxime eius distinctio excepturi omnis facilis.
+                         </div>
+                         
+                         <input type="checkbox" name="btn" id="btn">
+                         <label for="btn"></label>
+                         
+                     </div>
+                     
+                     <div class="blog__date">
+                         <div class="date">January 20, 2023</div>
+                     </div>
+                     
+                 </div>
+                 
+                         <div class="blog__item">
+                    
+                     <div class="blog__img">
+                         <img src="images/blog/2.png" alt="">
+                     </div>
+                     
+                     <div class="blog__title">The benefits of plants in your room</div>
+                     
+                     <div class="blog__text-2">
+                     <div class="blog__text-1-2">
+                         Plants in your room can bring numerous benefits, such as improved air quality, reduced stress, and increased feelings of well-being
+                     </div>
+                     <span class="dots-2">...</span>   
+                        <div class="blog__text-2-2">
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut eaque, dolorum non. Totam amet sapiente ullam aliquam exercitationem unde molestiae provident corrupti culpa, voluptates maxime eius distinctio excepturi omnis facilis.
+                         </div>
+                         
+                         <input type="checkbox" name="btn" id="btn-2">
+                         <label for="btn-2"></label>
+                         
+                     </div>
+                     
+                     <div class="blog__date">
+                         <div class="date">January 10, 2023</div>
+                         
+                     </div>
+                     
+                 </div>
+                 
+                         <div class="blog__item">
+                    
+                     <div class="blog__img">
+                         <img src="images/blog/3.png" alt="">
+                     </div>
+                     
+                     <div class="blog__title">Hobbyist plants in the house</div>
+                     
+                     <div class="blog__text-3">
+                     <div class="blog__text-3">
+                         Having hobbyist plants in the house is a great way to bring nature indoors. Not only do they purify the air, but they
+                     </div>
+                     <span class="dots-3">...</span>   
+                        <div class="blog__text-2-3">
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut eaque, dolorum non. Totam amet sapiente ullam aliquam exercitationem unde molestiae provident corrupti culpa, voluptates maxime eius distinctio excepturi omnis facilis.
+                         </div>
+                         
+                         <input type="checkbox" name="btn" id="btn-3">
+                         <label for="btn-3"></label>
+                         
+                     </div>
+                     
+                     <div class="blog__date">
+                         <div class="date">January 15, 2023</div>
+                         <span class="more" href="#">Read More</span>
+                         
+                     </div>
+                     
+                 </div>
+                 
+             </div>
+            
+        </div><!--/.container-->
+    </div><!--/.blog-->
+    
+    <div class="footer">
+        <div class="container">
+            <div class="footer__title">Feel free to contact us</div>
+          
+            <div class="footer__icon">
+               <a href="" class="footer__img">
+                   <i class="fab fa-instagram"></i>
+               </a>
+                <a href="" class="footer__img">
+                   <i class="fab fa-facebook-f"></i>
+               </a>
+               <a href="" class="footer__img">
+                   <i class="fab fa-twitter"></i>
+               </a>
+            </div>
+            <div class="footer__name">
+                <a class="footer__item" href="#">Home</a>
+                <a class="footer__item" href="#">About Us</a>
+                <a class="footer__item" href="#">Plants</a>
+                <a class="footer__item" href="#">Delivery</a>
+                <a class="footer__item" href="#">Blog</a>
+                <a class="footer__item" href="#">Contact Us</a>
+            </div>
+            
+            
+        </div><!--/.container-->
+    </div><!--/.footer-->
+    
+    <div class="copyright">Copyright © 2021 Lush. All rights reserved.</div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

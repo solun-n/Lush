@@ -1,0 +1,70 @@
+// main: ../style.less
+
+.cta {
+    background: url(../images/cta-bg.png) no-repeat center;
+    
+    margin-bottom: 50px;
+    
+    background-size: cover;
+    padding: 130px 0;
+    
+    max-width: 100%;
+}
+
+.cta__inner {
+    display: flex;
+    position: relative;
+   
+  
+}
+
+.cta__left {
+    font-size: 32px;
+    color: @white;
+    font-weight: 700;
+     font-family: 'Lato', sans-serif;
+    
+    max-width: 570px;
+    margin-left: 100px;
+   
+}
+
+.cta__right {
+    display: flex;
+    margin-right: 20px;
+    
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+@media(max-width: 1210px) {
+    .cta__left {
+        font-size: 25px;
+        width: 300px;
+    }
+
+    .benefit__item {
+        width: auto;
+    }
+}
+
+@media(max-width: 1024px) {
+    .cta__left {
+        font-size: 22px;
+        max-width: 200px;
+        margin-left: 70px;
+    }
+    
+    .subscribe  {
+        width: 400px;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+// main: ../style.less
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bebebe;
+    border: 3.5px #e0e0e0 solid;
+    border-radius: 13px;
+    opacity: 17%;
+}
+
+.header {
+   background-image: url(../images/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 820px;
+    width: 100%;
+}
+
+.header__line {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+    padding: 6px 25px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__line.fixed {
+    background-color: #a0b4b0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+    padding: 6px 25px;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+.header__inner {
+     text-align: center;
+     font-family: 'Lato', sans-serif;
+    color: @white;
+}
+
+.header__title {
+    font-size: 64px;
+    font-weight: 700;
+    margin-top: 100px;
+}
+
+.header__subtitle {
+    font-size: 18px;
+    max-width: 770px;
+    margin: 0 auto;
+}
+
+@media(max-width: 1020px) {
+    
+    .header__title {
+        font-size: 59px;
+        margin-top: 68px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

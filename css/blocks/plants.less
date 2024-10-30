@@ -1,0 +1,158 @@
+// main: ../style.less
+
+.plants__title {
+    color: @d-green;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    
+    max-width: 475px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.plants__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    width: 100%;
+   
+}
+
+.plants__item-two {
+    display: flex;
+    margin-right: 40px;
+}
+
+.plants__item {
+    display: block;
+    max-width: 280px;
+    
+    width: 100%;
+    height: auto;
+    
+    border-radius: 5px;
+    
+    cursor: pointer;
+    margin-right: 40px;
+    position: relative;
+    
+    &:last-child {
+        margin-right: 0;
+        
+    }
+    
+    &:hover {
+        box-shadow: 0px 4px 4px 0px #00000040;
+    }
+    
+}
+
+.plants-like {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    
+    width: 32px;
+    height: 32px;
+    
+    background-color: #f4f4f4;
+    
+    
+    border: 0;
+    border-radius: 50%;
+    
+    
+    &:hover {
+      background-color: @white;
+      
+    }
+    
+    
+}
+
+
+
+.plants__inner {
+    position: relative;
+    margin: 20px 15px;
+    padding-bottom: 20px;
+  
+}
+
+.plants__name {
+    font-size: 16px;
+    color: @d-green;
+    font-weight: 700;
+}
+
+.plants__price {
+    display: flex;
+}
+
+.plants__price-one, .plants__price-two {
+    font-size: 12px;
+    color: @d-green;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    margin-top: 7px;
+   
+}
+
+.plants__price-one {
+    color: @black;
+    font-family: inherit;
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+.plants__btn {
+    padding: 8px 24px;
+    
+    font-size: 12px;
+    font-weight: 700;
+    color: @d-green;
+    
+    border: 2px solid @d-green;
+    border-radius: 3px;
+    background-color: transparent;
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    
+    transition: background-color .2s linear, color .2s linear;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: @d-green;
+        color: @white;
+    }
+    
+    &:disabled {
+        pointer-events: none;
+        opacity: .4;
+    }
+    
+    
+}
+
+
+@media(max-width: 1024px) {
+    .plants__item-two {
+        display: block;
+    }
+    
+}
+   
+
+
+
+
+
+
+
+
+
