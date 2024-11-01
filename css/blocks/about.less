@@ -31,6 +31,7 @@
 .about__inner {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .about__item {
@@ -87,7 +88,7 @@
     max-width: 250px;
 }
 
-@media(max-width: 1024px) {
+@media(max-width: 1140px) {
     .about__line {
         display: block;
         
@@ -107,8 +108,32 @@
         font-size: 17px;
         max-width: 500px;
     }
+    
+    .about__item-text {
+        font-size: 14px;
+    }
 }
 
+@media(max-width: 1024px) {
+    .about__text {
+        font-size: 15px;
+        max-width: 400px;
+    }
+}
+
+@media(max-width: 980px) {
+    .about__text {
+        font-size: 14px;
+        max-width: 500px;
+    }
+}
+
+@media(max-width: 890px) {
+    .about__text {
+        font-size: 12px;
+        max-width: 500px;
+    }
+}
 
 
 

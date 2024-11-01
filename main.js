@@ -175,6 +175,12 @@ orderOpenProd.addEventListener('click', (e) => {
     }
 })
 
+// Burger 
+
+document.getElementById("burger").addEventListener('click', function(){
+    document.querySelector(".nav__items").classList.toggle("open")
+})
+
 
 
 
